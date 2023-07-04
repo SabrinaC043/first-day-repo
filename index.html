@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://example.com/review.php" method=" get">
+      <fieldset>
+        <legend>Your Details:</legend>
+        <label>
+          Email:
+          <input type="email" name="email" size="40" />
+        </label>
+    </br>
+        <label>
+          Name:
+          <input type="text" name="'name" size="30" maxlength="100" />
+        </label>
+    </br>
+      </fieldset>
+      <legend> Your Review:
+      </legend>
+      <p>
+        <label for="'hear-about"> 
+            How did you hear about us?
+        </label>
+        <select name="referrer" id="hear-about">
+            <option value="google">Google</option>
+            <option value="friend">Friend</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+      </p>
+      <p>
+      <br> Would you visit again?
+      </br>
+      <label>
+        <input type="radio" name="rating" value="yes"> Yes 
+    </label>
+        <input type="radio" name="rating" value="no"> No 
+    </label>
+        <input type="radio" name="rating" value="maybe"> Maybe
+    </label>
+</p>
+<p>
+<label for="comments">
+    Comments:
+</label>
+<br/>
+<textarea rows="10" cols="50" id="comments">
+</textarea>
+</p>
+<label>
+    <input type="submit" value="Submit review"/>
+    <input type="button" value="Thank you"/>
+    </fieldset>
+</label>
+<br/>
+    </form>
+  </body>
+</html>
